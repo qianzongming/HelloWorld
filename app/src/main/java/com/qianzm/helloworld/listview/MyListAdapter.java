@@ -1,0 +1,69 @@
+package com.qianzm.helloworld.listview;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
+import com.qianzm.helloworld.MainActivity;
+import com.qianzm.helloworld.R;
+
+public class MyListAdapter extends BaseAdapter {
+    private Context mContext;
+    private LayoutInflater mLayoutInflater;
+    MyListAdapter(Context context){
+        this.mContext = context;
+        mLayoutInflater = LayoutInflater.from(context);
+    }
+
+    @Override
+    public int getCount() {
+
+        return 10;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return null;
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
+
+    static class ViewHolder{
+        public ImageView imageView;
+        public TextView tvTitle,tvTime,tvContent;
+
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder = null;
+        if(convertView == null){
+            convertView = mLayoutInflater.inflate(R.layout.layout_list_item,null);
+            holder = new ViewHolder();
+            holder.imageView = convertView.findViewById(R.id.iv);
+            holder.tvTitle = convertView.findViewById(R.id.tv_title);
+            holder.tvTime = convertView.findViewById(R.id.tv_time);
+            holder.tvContent = convertView.findViewById(R.id.tv_content);
+            convertView.setTag(holder);
+        }else {
+            holder = (ViewHolder)convertView.getTag();
+        }
+
+        holder.tvTitle.setText("这是标题");
+        holder.tvTime.setText("2088-88-88");
+        holder.tvContent.setText("这是内容");
+        Glide.with(mContext).load("https://www.baidu.com/img/superlogo_c4d7df0a003d3db9b65e9ef0fe6da1ec.png").into(holder.imageView);
+
+
+        return convertView;
+    }
+}
