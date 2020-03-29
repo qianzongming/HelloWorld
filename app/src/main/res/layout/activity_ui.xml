@@ -74,6 +74,12 @@
             android:layout_width="match_parent"
             android:text="toast">
         </Button>
+
+        <Button android:id="@+id/btn_dialog"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="dialog">
+        </Button>
     </LinearLayout>
 
 

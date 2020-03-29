@@ -22,7 +22,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnListview;
     private Button mBtnGridview;
     private Button mBtnRecycleview;
-    private Button mBtnWebview,mBtnToast;
+    private Button mBtnWebview,mBtnToast,mBtnDialog;
 
 
     @Override
@@ -128,6 +128,15 @@ public class UIActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(UIActivity.this, ToastActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnDialog = findViewById(R.id.btn_dialog);
+        mBtnDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UIActivity.this, DialogActivity.class);
                 startActivity(intent);
             }
         });
