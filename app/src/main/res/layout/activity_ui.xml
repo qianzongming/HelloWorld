@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button android:id="@+id/btn_textview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="TextView">
+
+        </Button>
+        <Button android:id="@+id/btn_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Button">
+        </Button>
+
+        <Button android:id="@+id/btn_edittext"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="EditText">
+        </Button>
+
+        <Button android:id="@+id/btn_radiobutton"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="RadioButton">
+        </Button>
+
+        <Button android:id="@+id/btn_checkbox"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="CheckBox">
+        </Button>
+
+        <Button android:id="@+id/btn_imageview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="ImageView">
+        </Button>
+
+        <Button android:id="@+id/btn_listview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="ListView">
+        </Button>
+
+        <Button android:id="@+id/btn_gridview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="gridview">
+        </Button>
+        <Button android:id="@+id/btn_recyclerview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="recycleview">
+        </Button>
+
+        <Button android:id="@+id/btn_webview"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="webview">
+        </Button>
+
+        <Button android:id="@+id/btn_toast"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="toast">
+        </Button>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

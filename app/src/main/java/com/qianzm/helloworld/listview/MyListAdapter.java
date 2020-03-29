@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.qianzm.helloworld.MainActivity;
 import com.qianzm.helloworld.R;
 
 public class MyListAdapter extends BaseAdapter {

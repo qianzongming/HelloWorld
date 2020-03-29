@@ -12,7 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ToastActivity" />
         <activity android:name=".WebViewActivity" />
         <activity android:name=".recyclerview.PURecyclerViewActivity" />
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />
@@ -27,13 +34,8 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".UIActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
