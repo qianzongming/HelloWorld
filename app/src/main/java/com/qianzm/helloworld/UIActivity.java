@@ -22,7 +22,7 @@ public class UIActivity extends AppCompatActivity {
     private Button mBtnListview;
     private Button mBtnGridview;
     private Button mBtnRecycleview;
-    private Button mBtnWebview,mBtnToast,mBtnDialog,mBtnProgress,mBtnCustomDialog;
+    private Button mBtnWebview,mBtnToast,mBtnDialog,mBtnProgress,mBtnCustomDialog,mBtnPopupWindow;
 
 
     @Override
@@ -159,6 +159,16 @@ public class UIActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        mBtnPopupWindow = findViewById(R.id.btn_popup_window);
+        mBtnPopupWindow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UIActivity.this, PopupWindowActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

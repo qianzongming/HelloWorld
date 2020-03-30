@@ -92,6 +92,12 @@
             android:text="custom_Dialog">
         </Button>
 
+        <Button android:id="@+id/btn_popup_window"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="popup_window">
+        </Button>
+
 
 
     </LinearLayout>
